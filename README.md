@@ -1,70 +1,76 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Final Project, Frontend
 
-## Available Scripts
+Front-end application written in React to use the REST API endpoints developed in part 1 of the project. 
 
-In the project directory, you can run:
+Pre-requisites:
+Backend running on localhost. 
 
-### `npm start`
+Note:
+You might need to enable CORS in your Express server. 
+This steps are for backend application/server
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+CORS Installation:
+```bash
+  npm install cors
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+CORS Usage (app.js)
+```bash
+  import cors from "cors"
 
-### `npm test`
+  app.use(cors())
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Run the application
 
-### `npm run build`
+Install the needed packages and run the app.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+  npm install
+  npm start
+```
+    
+## Folder struture
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+app
+└── src
+    ├── App.js
+    ├── components
+    │   └── Footer.js
+    │   └── MovieCard.js
+    │   └── Navigation.js
+    └── pages
+        ├── Home.js
+        ├── Movie.js
+        ├── Movies.js
+        └── Users.js
+```
 
-### `npm run eject`
+- App.ts: Front-end React code that manages the different routes of the front end.
+- /components: A folder with the reusable components you will use.
+- /pages: All application pages have their matching file in this folder.
+## Requirements for evaluation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Create /users page 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Create /user:id page
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Create /movie:id page
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Inside /user:id page create button to delete user from database
 
-## Learn More
+- Save a digital transaction proof of a rating
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Documentation
 
-### Analyzing the Bundle Size
+[Bootstrap](https://react-bootstrap.netlify.app/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+[HTML Basics](https://www.w3schools.com/html/html_basic.asp)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[React](https://react.dev/)

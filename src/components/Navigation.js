@@ -22,7 +22,8 @@ const Navigation = () => {
                                 userSession.signUserOut();
                                 window.location = '/';
                             }} >Signout
-                    </a> }
+                        </a> 
+                    }
                 </div>  
             </Navbar>
     );

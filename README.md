@@ -49,7 +49,7 @@ app
         └── Users.js
 ```
 
-- App.ts: Front-end React code that manages the different routes of the front end.
+- App.js: Front-end React code that manages the different routes of the front end.
 - /components: A folder with the reusable components you will use.
 - /pages: All application pages have their matching file in this folder.
 ## Requirements for evaluation

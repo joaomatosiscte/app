@@ -56,11 +56,11 @@ app
 
 - Create /users page 
 
-- Create /user:id page
+- Create /user/:id page
 
-- Create /movie:id page
+- Create /movie/:id page
 
-- Inside /user:id page create button to delete user from database
+- Inside /user/:id page create button to delete user from database
 
 - Save a digital transaction proof of a rating
 

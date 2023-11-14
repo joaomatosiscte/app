@@ -22,9 +22,9 @@ export default function App() {
             <h2>Requirements for evaluation</h2>
             <ul>
               <li>Create /users page</li>
-              <li>Create /user:id page</li>
-              <li>Create /movie:id page</li>
-              <li>Inside /user:id page create button to delete user from database</li>
+              <li>Create /user/:id page</li>
+              <li>Create /movie/:id page</li>
+              <li>Inside /user/:id page create button to delete user from database</li>
               <li>Save a digital transaction proof of a rating</li>
             </ul>
           </div>

@@ -20,9 +20,9 @@ export default function App() {
     ];
     
     const options = {
-      contractAddress: 'ST1GT619E62BQ1FQ2CWXYD7BNGXV2RQJD1GA19B7R',
-      contractName: 'wonderful-lavender-swordtail',
-      functionName: 'get-value',
+      contractAddress: '',
+      contractName: '',
+      functionName: 'set-value',
       functionArgs,
       appDetails: {
         name: 'Movies App Rating',

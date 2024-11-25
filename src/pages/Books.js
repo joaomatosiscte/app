@@ -2,14 +2,14 @@ import React, {useState, useEffect} from "react";
 import CardGroup from 'react-bootstrap/CardGroup';
 import Row from 'react-bootstrap/Row';
 
-import MovieCard from "../components/MovieCard";
+import BookCard from "../components/BookCard";
 
 export default function App() {
-  let [movies, setMovies] = useState([]);
+  let [books, setBooks] = useState([]);
 
-  const getMovies = async () => {
+  const getBooks = async () => {
     try {
-      const response = await fetch('http://localhost:3000/movies', {
+      const response = await fetch('http://localhost:3000/books', {
         method: 'GET',
         headers: {
         'Content-Type': 'application/json'
@@ -17,7 +17,8 @@ export default function App() {
       });
       
       const data = await response.json();
-      setMovies(data);
+      console.log(data)
+      setBooks(data);
 
     } catch (error) {
       console.error('Error:', error);
@@ -25,19 +26,19 @@ export default function App() {
   }
 
   useEffect(() => {
-    getMovies();
+    getBooks();
   }, []);
 
   return (
     <div className="container pt-5 pb-5">
-        <h2>Movies</h2>
+        <h2>Books</h2>
         <CardGroup>
             <Row xs={1} md={2} className="d-flex justify-content-around">
-            {movies && movies.map((movie) => {
+            {books && books.map((book) => {
                 return (
-                    <MovieCard 
-                        key={movie._id} 
-                        {...movie}
+                    <BookCard 
+                        key={book._id} 
+                        {...book}
                     />
                 );
             })}

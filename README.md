@@ -7,7 +7,7 @@ Pre-requisites:
 Backend running on localhost. 
 
 Note:
-You might need to enable CORS in your Express server. 
+You might need to enable CORS in your Express server (Backend). 
 This steps are for backend application/server
 
 CORS Installation:
@@ -40,12 +40,12 @@ app
     ├── App.js
     ├── components
     │   └── Footer.js
-    │   └── MovieCard.js
+    │   └── BookCard.js
     │   └── Navigation.js
     └── pages
         ├── Home.js
-        ├── Movie.js
-        ├── Movies.js
+        ├── Book.js
+        ├── Books.js
         └── Users.js
 ```
 
@@ -58,11 +58,11 @@ app
 
 - Create /user/:id page
 
-- Create /movie/:id page
+- Create /book/:id page
+
+- Edit BookCard component
 
 - Inside /user/:id page create button to delete user from database
-
-- Save a digital transaction proof of a rating
 
 
 
